@@ -11,8 +11,6 @@
  * EN: The base Component interface defines operations that can be altered by
  * decorators.
  *
- * RU: Базовый интерфейс Компонента определяет поведение, которое изменяется
- * декораторами.
  */
 class Component {
  public:
@@ -50,7 +48,6 @@ class Decorator : public Component {
   /**
      * EN: The Decorator delegates all work to the wrapped component.
      *
-     * RU: Декоратор делегирует всю работу обёрнутому компоненту.
      */
   std::string Operation() const override {
     return this->component_->Operation();
